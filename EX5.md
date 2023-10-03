@@ -29,7 +29,8 @@ select * from employee;
 ### Create salary_log table
 #### Query:
 ```
-CREATE TABLE salary_log (log_id INT AUTO_INCREMENT PRIMARY KEY,empid INT,empname VARCHAR(10),old_salary DECIMAL(10, 2),new_salary DECIMAL(10, 2),update_date DATE);
+CREATE TABLE salary_log (log_id INT AUTO_INCREMENT PRIMARY KEY,empid INT,empname VARCHAR(10),old_salary DECIMAL(10, 2),
+new_salary DECIMAL(10, 2),update_date DATE);
 
 desc salary_log;
 ```
@@ -41,7 +42,8 @@ desc salary_log;
 DELIMITER //
 CREATE TRIGGER log_salary_update AFTER UPDATE ON employee FOR EACH ROW
 BEGIN
-  INSERT INTO salary_log (empid, empname, old_salary, new_salary, update_date) VALUES (OLD.empid, OLD.empname, OLD.salary, NEW.salary, NOW());
+  INSERT INTO salary_log (empid, empname, old_salary, new_salary, update_date) VALUES (OLD.empid, OLD.empname,
+OLD.salary, NEW.salary, NOW());
 END;
 //
 DELIMITER ;
