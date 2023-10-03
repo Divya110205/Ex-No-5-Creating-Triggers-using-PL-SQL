@@ -14,7 +14,7 @@
 
 ### Program:
 ### Create employee table
-# Query
+#### Query
 ### Create salary_log table
 
 ### PLSQL Trigger code
