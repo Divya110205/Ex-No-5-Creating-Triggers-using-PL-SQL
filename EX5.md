@@ -65,5 +65,4 @@ SELECT * FROM salary_log;
 #### Output:
 ![4](https://github.com/Divya110205/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119404855/32f94782-398c-4597-9a85-79d8a66c89f9)
 
-### Result:
-The program has been implemented successfully.
+### Result:The program has been implemented successfully.
